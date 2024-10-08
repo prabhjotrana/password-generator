@@ -3,16 +3,18 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let password1=document.getElementById("password1");
 let password2=document.getElementById("password2");
 function generatePassword() {
+    password1.textContent="";
+    password2.textContent="";
     for (let i = 0; i < 15; i++) {
         {
-            let count=Math.floor(Math.random()*characters.length)+1;
+            let count=Math.floor(Math.random()*characters.length);
             password1.textContent+=characters[count];
         }
         
     }
     for (let i = 0; i < 15; i++) {
         {
-            let count=Math.floor(Math.random()*characters.length)+1;
+            let count=Math.floor(Math.random()*characters.length);
             password2.textContent+=characters[count];
         }
         

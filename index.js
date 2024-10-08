@@ -20,3 +20,4 @@ function generatePassword() {
         
     }
 }
+window.generatePassword=generatePassword;
